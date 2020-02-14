@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+
+        <item
+            android:checked="true"
+            android:id="@+id/nav_grcard"
+            android:icon="@drawable/full_gr_card"
+            android:title="@string/titleGRCard" />
+        <item
+            android:id="@+id/nav_pickcard"
+            android:icon="@drawable/full_pick_card"
+            android:title="@string/titlePickCard" />
+        <item
+            android:id="@+id/nav_movements"
+            android:icon="@drawable/full_movements_card"
+            android:title="@string/titleMovemets" />
+        <item
+            android:id="@+id/nav_transfer"
+            android:icon="@drawable/full_transfer_card"
+            android:title="@string/titleTransfer" />
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/titleSettings" />
+        <item
+            android:id="@+id/nav_send_feedback"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/titleSendFeedback" />
+    </group>
+
+    <group
+        android:id="@+id/menu_bottomlogout"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/full_logout"
+            android:title="@string/titleLogout" />
+    </group>
+
+</menu>

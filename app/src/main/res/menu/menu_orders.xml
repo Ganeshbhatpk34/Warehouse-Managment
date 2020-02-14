@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_action_search"
+        android:orderInCategory="100"
+        android:title="@string/abc_search_hint"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_bluetooth"
+        android:icon="@drawable/ic_full_bluetooth"
+        android:orderInCategory="100"
+        android:title="Bluetooth"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_full_reset"
+        android:orderInCategory="100"
+        android:title="@string/refresh"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_header"
+        app:showAsAction="never"
+        android:title="Header Details" />
+
+    <item
+        android:id="@+id/action_lines"
+        app:showAsAction="never"
+        android:title="Lines Details" />
+
+    <!--<item
+        android:id="@+id/action_orderbyItem"
+        app:showAsAction="never"
+        android:title="Item Code" />
+
+    <item
+        android:id="@+id/action_orderbyDesc"
+        app:showAsAction="never"
+        android:title="Description" />-->
+
+</menu>

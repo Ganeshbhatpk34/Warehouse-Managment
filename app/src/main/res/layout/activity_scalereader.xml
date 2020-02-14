@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.hanks.htextview.HTextView
+            android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textColor="@color/level_default"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:textAlignment="viewStart"
+            app:animateType="typer" />
+        <!-- Typer evaporate -->
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/alertPopup"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_1sdp"
+            android:visibility="visible"
+            fancy:fb_borderColor="#F5F5F5"
+            fancy:fb_borderWidth="@dimen/_2sdp"
+            fancy:fb_defaultColor="@color/colorInfo"
+            fancy:fb_focusColor="#408bca"
+            fancy:fb_iconResource="@drawable/ic_full_addcart"
+            fancy:fb_radius="@dimen/_20sdp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/pairedlist"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_130sdp"
+        android:divider="@color/material_blue_grey_800"
+        android:dividerHeight="1dp" />
+
+    <LinearLayout
+        android:id="@+id/inputpane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/send"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:gravity="center"
+                fancy:fb_borderColor="#F5F5F5"
+                fancy:fb_borderWidth="@dimen/_1sdp"
+                fancy:fb_defaultColor="@color/level_5"
+                fancy:fb_focusColor="#408bca"
+                fancy:fb_fontIconSize="@dimen/_1sdp"
+                fancy:fb_iconPosition="right"
+                fancy:fb_iconResource="@drawable/ic_full_donecir"
+                fancy:fb_radius="@dimen/_5sdp"
+                fancy:fb_text="  WEIGHT  "
+                fancy:fb_textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/cancel"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:gravity="center"
+                fancy:fb_borderColor="#F5F5F5"
+                fancy:fb_borderWidth="@dimen/_1sdp"
+                fancy:fb_defaultColor="@color/main_orange_color"
+                fancy:fb_focusColor="#408bca"
+                fancy:fb_fontIconSize="@dimen/_1sdp"
+                fancy:fb_iconPosition="right"
+                fancy:fb_iconResource="@drawable/ic_full_void"
+                fancy:fb_radius="@dimen/_5sdp"
+                fancy:fb_text="  CANCEL "
+                fancy:fb_textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
