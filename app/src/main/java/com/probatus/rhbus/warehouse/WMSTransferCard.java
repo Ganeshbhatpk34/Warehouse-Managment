@@ -1344,7 +1344,7 @@ public class WMSTransferCard extends AppCompatActivity implements
                     public void onClick(SweetAlertDialog sDialog) {
                         sDialog.dismissWithAnimation();
                         MyStatic.setWhichactivity("TRANSFER");
-                        startActivityForResult(new Intent(WMSTransferCard.this,JobViewActivity.class),1);
+                        //startActivityForResult(new Intent(WMSTransferCard.this,JobViewActivity.class),1);
                         finish();
                     }
                 });

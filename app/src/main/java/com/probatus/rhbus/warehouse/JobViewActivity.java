@@ -193,13 +193,10 @@ public class JobViewActivity extends AppCompatActivity implements
             if (matches != null && matches.size() > 0) {
                 String searchWrd = matches.get(0);
                 if (!TextUtils.isEmpty(searchWrd)) {
-                    Toast.makeText(getApplicationContext(),""+ searchWrd,Toast.LENGTH_SHORT).show();
                     searchView.setQuery(searchWrd, true);
                 }
             }
             return;
-        } else if(requestCode == RESULT_FIRST_USER && requestCode == RESULT_CANCELED) {
-            recreate();
         }
         super.onActivityResult(requestCode, resultCode, data);
     }

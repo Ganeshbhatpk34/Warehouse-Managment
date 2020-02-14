@@ -1338,7 +1338,7 @@ public class WMSGRCard extends AppCompatActivity implements
                     public void onClick(SweetAlertDialog sDialog) {
                         sDialog.dismissWithAnimation();
                         MyStatic.setWhichactivity("GOODSRECIEPT");
-                        startActivityForResult(new Intent(WMSGRCard.this,JobViewActivity.class),1);
+                        //startActivityForResult(new Intent(WMSGRCard.this,JobViewActivity.class),1);
                         finish();
                     }
                 });

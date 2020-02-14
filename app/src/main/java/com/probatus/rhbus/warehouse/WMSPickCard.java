@@ -1396,7 +1396,7 @@ public class WMSPickCard extends AppCompatActivity implements
                     public void onClick(SweetAlertDialog sDialog) {
                         sDialog.dismissWithAnimation();
                         MyStatic.setWhichactivity("PICKORDER");
-                        startActivityForResult(new Intent(WMSPickCard.this,JobViewActivity.class),1);
+                        //startActivityForResult(new Intent(WMSPickCard.this,JobViewActivity.class),1);
                         finish();
                     }
                 });
